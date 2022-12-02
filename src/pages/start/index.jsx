@@ -9,7 +9,7 @@ export default function Start() {
     const navigation = useNavigation();
 
     const hambleNavAppExplanation = () => {
-        console.log("testando o click")
+        navigation.navigate("AppExplanation")
     }
     return (
         <View style={styles.container}>

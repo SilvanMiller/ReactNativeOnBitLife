@@ -28,7 +28,7 @@ export default function LiveStatus(){
 const styles = StyleSheet.create({
     container: {
         width: 300,
-        height: 300,
+        height: 230,
     },
     educacaoAnimacao: {
         width: 100,

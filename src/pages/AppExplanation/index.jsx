@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { View, ScrollView, StyleSheet, Text } from 'react-native';
+import { View, ScrollView, StyleSheet, Text, handleNavHome ,hadleSetShowHome } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 

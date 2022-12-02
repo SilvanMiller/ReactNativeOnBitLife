@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Image } from 'react-native-paper';
+import { View, StyleSheet, Image } from 'react-native';
 
 import { ProgressBar } from 'react-native-paper';
 
@@ -52,11 +52,11 @@ export default function StatusBar() {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 20,
+        padding: 10,
         backgroundColor: "#151515",
         borderRadius: 10,
-        marginTop: 10,
-        marginBottom: 10,
+        marginTop: 5,
+        marginBottom: 5,
     },
     statusBarContainer: {
         flexDirection: "row",
