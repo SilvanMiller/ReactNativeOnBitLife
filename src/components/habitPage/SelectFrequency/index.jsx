@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View, Text } from 'react-native';
 import { SelectList } from "react-native-dropdown-select-list";
 
-export default function SelectFrequency({ habitFrequency, frequencyInput }) {
+export default function SelectFrequency({ habitFrequency, frequencyInput  }) {
     const [selected, setSelected] = useState(
         habitFrequency ? habitFrequency : "-"
     );
