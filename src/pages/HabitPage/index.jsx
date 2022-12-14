@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { View, StyleSheet, TouchableOpacity, ScrollView, Image, Alert, Text, } from 'react-native';
 
+import SelectHabit from '../../components/habitPage/SelectHabit';
 
 export default function HabitPage({ route }) {
     const navigation = useNavigation();
+    const [habitInput, setHabitInput] = useState();
     const { create, habit } = route.params
 
     return (
@@ -24,6 +26,8 @@ export default function HabitPage({ route }) {
                         <View style={styles.inputContainer}>
                             <Text style={styles.area}>{habit?.habitArea}</Text>
                         </View>
+                        <Text style={styles.inputText}>Hábito</Text>
+                        <SelectHabit habit={habit} habitInput={setHabitInput} />
                     </View>
                 </View>
             </ScrollView>
@@ -63,7 +67,7 @@ const styles = StyleSheet.create({
     },
     inputContainer: {
         borderWidth: 1,
-        borderColor: "#FFFFFF",
+        borderColor: "#90B7F3",
         borderRadius: 10,
         paddingHorizontal: 20,
         paddingVertical: 15,
