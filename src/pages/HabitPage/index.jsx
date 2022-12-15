@@ -40,19 +40,18 @@ export default function HabitPage({ route }) {
                             habitFrequency={habit?.habitFrequency} 
                             frequencyInput={setFrequencyInput} />
 
-                        {/* {frequencyInput === "Mensal" ? null : (
-                            
-                        )}; */}
+                        {/* {frequencyInput === "Mensal" ? null : ( )}; */}
                             <Notification 
                             notificationToggle={notificationToggle}
                             setNotificationToggle={setNotificationToggle} />
-                        
                     </View>
                 </View>
             </ScrollView>
         </View>
     );
 };
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,

@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         alignItems: "center",
-        marginBottom: 20,
+        marginBottom: 20
+        ,
     },
     titleDisabled: {
         color: "#BBBB",
@@ -33,6 +34,6 @@ const styles = StyleSheet.create({
     title: {
         color: "white",
         fontSize: 20,
-        marginRight: 10,
+        marginRight: 25,
     },
 });
